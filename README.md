@@ -6,7 +6,7 @@ This script is not necessarily secure. It runs wget in a subprocess when -get is
 
 # Usage
 
-<code>
+```
 \# compare the body of 2 urls, both with the same query.
 dom.py -url1 http://eg.com -url2 http://eg2.com -query="a=1" -find body
 
@@ -17,7 +17,7 @@ dom.py -get -url1 http://eg.com -url2 http://dev.eg.com -path=/route
 \# comopare the content of all div.content and all div.footer elements
 \# (CSS selectors)
 dom.py -find div.content -find div.footer
-</code>
+```
 
 # parameters:
 
@@ -34,7 +34,7 @@ dom.py -find div.content -find div.footer
 * -path {/common/path/at/end/of/url}<br/>
   The given path is added to the end of the URL string.
 * -get<br/>
-: Download the content of the specified URLs.
+  Download the content of the specified URLs.
 * -find "{css selector}"<br/>
   Find the given CSS selector in the HTML content. Compare each resulting element with diff, show the output.
   may be specified multiple times.
